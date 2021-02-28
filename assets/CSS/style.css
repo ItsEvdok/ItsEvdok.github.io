@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.pimg {
+    background-image: url("../images/background.jpg");
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+
+header {
+    background-size: 50%;
+    background-position: center;
+}
+
+header a {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 5px 10px;
+}
+
+header nav ul li {
+    letter-spacing: 5px;
+}
+
+.ptext {
+    position: relative;
+    margin: 450px 0 450px 0;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    opacity: 70%;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+}
+
+.about-me {
+    background-color: azure;
+    padding: 25px 20px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.about-me h2 {
+    font-size: 40px;
+    text-shadow: 1px 1px 5px #111;
+    margin-bottom: 10px;
+    top: 0%;
+}
+
+.about-me p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+    background-color: azure;
+    margin: 40px 10px;
+    border: 1px solid gray;
+}
+
+.content h2 {
+    text-align: center;
+}
