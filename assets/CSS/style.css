@@ -23,6 +23,7 @@ header a {
     color: white;
     font-size: 30px;
     text-decoration: none;
+    text-shadow: 1px 1px 5px #111;
 }
 
 header nav ul {
@@ -31,7 +32,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin: 5px 10px;
+    margin: 10px 15px;
 }
 
 header nav ul li {
@@ -50,8 +51,8 @@ header nav ul li {
 }
 
 .ptext .border {
-    background-color: #111;
-    color: white;
+    background-color: white;
+    color: #111;
     padding: 20px;
 }
 
@@ -60,7 +61,7 @@ header nav ul li {
     padding: 25px 20px;
     margin: 10px;
     text-align: center;
-    border: 1px solid gray;
+    border: 3px solid rgba(0, 0, 0, 0.05);
 }
 
 .about-me h2 {
@@ -78,9 +79,23 @@ header nav ul li {
 .content {
     background-color: azure;
     margin: 40px 10px;
-    border: 1px solid gray;
+    border: 3px solid rgba(0, 0, 0, 0.05);
 }
 
 .content h2 {
     text-align: center;
+}
+
+.contact {
+    background-color: azure;
+    margin: 40px 10px;
+    border: 3px solid rgba(0, 0, 0, 0.05);
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact ul {
+    list-style-type: none;
 }
