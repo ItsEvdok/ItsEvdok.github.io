@@ -62,12 +62,12 @@ header nav ul li {
     padding: 25px 20px;
     margin: 10px;
     text-align: center;
-    border: 3px solid rgba(0, 0, 0, 0.05);
+    border: 3px solid rgba(255, 255, 255, 0.671);
 }
 
 .about-me h2 {
     font-size: 40px;
-    text-shadow: 1px 1px 5px #111;
+    text-shadow: 1px 1px 5px rgb(255, 255, 255, .7);
     margin-bottom: 10px;
     top: 0%;
 }
@@ -80,7 +80,7 @@ header nav ul li {
 .content {
     background-color: azure;
     margin: 40px 10px;
-    border: 3px solid rgba(0, 0, 0, 0.05);
+    border: 3px solid rgba(0, 0, 0, 0.671);
 }
 
 .content h2 {
@@ -90,7 +90,7 @@ header nav ul li {
 .contact {
     background-color: azure;
     margin: 40px 10px;
-    border: 3px solid rgba(0, 0, 0, 0.05);
+    border: 3px solid rgba(0, 0, 0, 0.671);
 }
 
 .contact h2 {
