@@ -69,7 +69,6 @@ header nav ul li {
     font-size: 40px;
     text-shadow: 1px 1px 5px rgb(255, 255, 255, .7);
     margin-bottom: 10px;
-    top: 0%;
 }
 
 .about-me p {
@@ -77,14 +76,50 @@ header nav ul li {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.content {
+.flex-container {
     background-color: azure;
     margin: 40px 10px;
     border: 3px solid rgba(0, 0, 0, 0.671);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
-.content h2 {
+.flex-container h2 {
     text-align: center;
+}
+
+.one {
+    background-image: url(../images/placeholder.png);
+    width: 1000px;
+    height: 800px;
+    background-size: cover;
+    border: 5px solid black;
+}
+
+.name {
+    background-color: grey;
+    background-size: 10px1;
+}
+
+.two {
+    background-image: url(../images/placeholder.png);
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    border: 5px solid black;
+    margin: 10px 0;
+}
+
+.three {
+    background-image: url(../images/placeholder.png);
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    border: 5px solid black;
+    margin: 10px 0;
 }
 
 .contact {
