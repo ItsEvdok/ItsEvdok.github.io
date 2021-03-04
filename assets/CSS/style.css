@@ -39,6 +39,10 @@ header nav ul li {
     letter-spacing: 5px;
 }
 
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .ptext {
     position: relative;
     margin: 450px 0 450px 0;
@@ -60,78 +64,127 @@ header nav ul li {
     background-color: rgb(0, 0, 0);
     color: azure;
     padding: 25px 20px;
-    margin: 10px;
+    margin: 50px;
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 0.671);
+    border-radius: 15px;
 }
 
 .about-me h2 {
     font-size: 40px;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 30%;
     text-shadow: 1px 1px 5px rgb(255, 255, 255, .7);
-    margin-bottom: 10px;
 }
 
 .about-me p {
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 25px;
 }
 
 .flex-container {
     background-color: azure;
-    margin: 40px 10px;
+    margin: 40px 50px;
     border: 3px solid rgba(0, 0, 0, 0.671);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    padding: 20px 20px 100px 20px;
+    border-radius: 15px;
 }
 
 .flex-container h2 {
+    font-size: 40px;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
     text-align: center;
+    margin: 0 auto 35px auto;
+    width: 30%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.65);
 }
 
-.one {
-    background-image: url(../images/placeholder.png);
-    width: 1000px;
-    height: 800px;
+.names a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color:rgba(0, 0, 0, 0.65);
+    padding: 20px;
+    border-radius: 0 0 15px 0;
+    display: inline;
+    float: left;
+}
+
+.best {
+    background-image: url(../images/Screenshot\ \(15\).png);
     background-size: cover;
-    border: 5px solid black;
+    width: 1020px;
+    height: 600px;
+    border: 5px solid rgba(0, 0, 0, 0.65);
 }
 
-.name {
-    background-color: grey;
-    background-size: 10px1;
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+.one,
 .two {
     background-image: url(../images/placeholder.png);
     width: 500px;
     height: 400px;
     background-size: cover;
-    border: 5px solid black;
-    margin: 10px 0;
+    border: 5px solid rgba(0, 0, 0, 0.65);
 }
 
-.three {
-    background-image: url(../images/placeholder.png);
-    width: 500px;
-    height: 400px;
-    background-size: cover;
-    border: 5px solid black;
-    margin: 10px 0;
+.one {
+    margin: 25px 12px 0 25px;
+}
+
+.two {
+    margin: 25px 25px 0 12px;
 }
 
 .contact {
     background-color: azure;
-    margin: 40px 10px;
+    margin: 40px 50px;
     border: 3px solid rgba(0, 0, 0, 0.671);
+    border-radius: 15px;
+    padding: 25px 20px;
+
 }
 
 .contact h2 {
+    font-size: 40px;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
     text-align: center;
+    margin: 0 auto 35px auto;
+    width: 30%;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.65);
 }
 
-.contact ul {
-    list-style-type: none;
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    padding: 10px;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+.contacts a,
+.contacts p {
+    font-size: 25px;
+    font-weight: bolder;
 }
