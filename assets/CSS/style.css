@@ -33,6 +33,9 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+}
+
+header nav {
     margin: 10px 15px;
 }
 
@@ -69,6 +72,7 @@ header nav ul li a:hover {
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 0.671);
     border-radius: 15px;
+    width: 95%;
 }
 
 .about-me h2 {
@@ -98,6 +102,7 @@ header nav ul li a:hover {
     flex-direction: column;
     padding: 20px 20px 100px 20px;
     border-radius: 15px;
+    width: 95%;
 }
 
 .flex-container h2 {
@@ -130,22 +135,20 @@ header nav ul li a:hover {
 .best {
     background-image: url(../images/Screenshot\ \(15\).png);
     background-size: cover;
-    width: 1020px;
-    height: 600px;
+    width: 900px;
+    height: 500px;
     border: 5px solid rgba(0, 0, 0, 0.65);
 }
 
 .projects {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .one,
 .two {
     background-image: url(../images/placeholder.png);
-    width: 500px;
-    height: 400px;
+    width: 438px;
+    height: 300px;
     background-size: cover;
     border: 5px solid rgba(0, 0, 0, 0.65);
 }
@@ -164,6 +167,7 @@ header nav ul li a:hover {
     border: 3px solid rgba(0, 0, 0, 0.671);
     border-radius: 15px;
     padding: 25px 20px;
+    width: 95%;
 
 }
 
@@ -202,4 +206,129 @@ header nav ul li a:hover {
 .contacts p {
     font-size: 25px;
     font-weight: bolder;
+}
+
+@media screen and (min-width: 575px) {
+
+    .about-me,
+    .flex-container,
+    .contact {
+        width: 85%;
+    }
+
+
+    header a {
+        font-size: 25px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    .about-me h2,
+    .flex-container h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .about-me p {
+        font-size: 15px;
+    }
+
+    .projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .best {
+        margin-bottom: 10px;
+    }
+
+    .one,
+    .two {
+        margin: 10px 0;
+    }
+
+    .best,
+    .one,
+    .two {
+        width: 400px;
+        height: 275px;
+    }
+
+    .contacts p,
+    .contacts a {
+        font-size: 20px;
+    }
+
+    .contacts p {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    header nav ul {
+        margin-right: 5px;
+    }
+    
+    .about-me,
+    .flex-container,
+    .contact {
+        width: 90%;
+    }
+
+    .best,
+    .one,
+    .two {
+        height: 350px;
+        width: 500px;
+    }
+
+    .contacts a {
+        padding: 0 50px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+
+    .about-me,
+    .flex-container,
+    .contact {
+        width: 91%;
+    }
+
+
+    .best {
+        width: 825px;
+        height: 500px;
+    }
+
+    .projects {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .one,
+    .two {
+        width: 402px;
+        height: 275px;
+    }
+
+    .one {
+        margin:4px 10px;
+    }
+    
+    .two {
+        margin:4px 10px;
+    }
+
+    .contacts {
+        padding: 0 100px;
+    }
+
+    .personal {
+        padding: 15px 0;
+    }
 }
