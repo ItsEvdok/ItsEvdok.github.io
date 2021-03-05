@@ -5,6 +5,15 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+.section-title {
+    font-size: 40px;
+    border-bottom: 3px solid;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 30%;
+}
+
 .pimg {
     background-image: url("../images/background.jpg");
     position: relative;
@@ -72,16 +81,9 @@ header nav ul li a:hover {
     text-align: center;
     border: 3px solid rgba(255, 255, 255, 0.671);
     border-radius: 15px;
-    width: 95%;
 }
 
 .about-me h2 {
-    font-size: 40px;
-    border-bottom: 3px solid;
-    padding-bottom: 5px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 30%;
     text-shadow: 1px 1px 5px rgb(255, 255, 255, .7);
 }
 
@@ -91,28 +93,18 @@ header nav ul li a:hover {
     margin: 25px;
 }
 
-.flex-container {
+/* My Work Section */
+
+.my-work {
     background-color: azure;
-    margin: 40px 50px;
+    margin: 50px;
     border: 3px solid rgba(0, 0, 0, 0.671);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
     padding: 20px 20px 100px 20px;
     border-radius: 15px;
-    width: 95%;
 }
 
-.flex-container h2 {
-    font-size: 40px;
-    border-bottom: 3px solid;
-    padding-bottom: 5px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 30%;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.65);
+.my-work h2 {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.85);
 }
 
 .names a {
@@ -120,7 +112,7 @@ header nav ul li a:hover {
     color: white;
     font-size: 15px;
     font-weight: bolder;
-    background-color:rgba(0, 0, 0, 0.65);
+    background-color:rgba(0, 0, 0, 0.85);
     padding: 20px;
     border-radius: 0 0 15px 0;
     display: inline;
@@ -133,33 +125,37 @@ header nav ul li a:hover {
 }
 
 .best {
-    background-image: url(../images/Screenshot\ \(15\).png);
-    background-size: cover;
-    width: 900px;
-    height: 500px;
-    border: 5px solid rgba(0, 0, 0, 0.65);
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .projects {
     display: flex;
-}
-
-.one,
-.two {
-    background-image: url(../images/placeholder.png);
-    width: 438px;
-    height: 300px;
-    background-size: cover;
-    border: 5px solid rgba(0, 0, 0, 0.65);
+    flex-direction: row;
+    justify-content: center;
 }
 
 .one {
-    margin: 25px 12px 0 25px;
+    background-image: url(../images/Screenshot\ \(15\).png);
+    background-size: cover;
+    width: 1000px;
+    height: 500px;
+    border: 5px solid rgb(0, 0, 0);
+    margin: 25px;
 }
 
-.two {
-    margin: 25px 25px 0 12px;
+.two,
+.three {
+    background-image: url(../images/placeholder.png);
+    width: 475px;
+    height: 350px;
+    background-size: cover;
+    border: 5px solid rgba(0, 0, 0);
+    margin: 25px;
 }
+
+/* Contacts Section */
 
 .contact {
     background-color: azure;
@@ -167,17 +163,10 @@ header nav ul li a:hover {
     border: 3px solid rgba(0, 0, 0, 0.671);
     border-radius: 15px;
     padding: 25px 20px;
-    width: 95%;
 
 }
 
 .contact h2 {
-    font-size: 40px;
-    border-bottom: 3px solid;
-    padding-bottom: 5px;
-    text-align: center;
-    margin: 0 auto 35px auto;
-    width: 30%;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.65);
 }
 
@@ -185,8 +174,13 @@ header nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 50px;
-    padding: 10px;
+}
+
+.git,
+.linked,
+.phone,
+.email {
+    padding: 10px 50px;
 }
 
 .contacts a {
@@ -208,26 +202,35 @@ header nav ul li a:hover {
     font-weight: bolder;
 }
 
-@media screen and (min-width: 575px) {
-
-    .about-me,
-    .flex-container,
-    .contact {
-        width: 85%;
+@media screen and (max-width: 980px) {
+    .projects {
+        flex-wrap: wrap;
     }
 
-
-    header a {
-        font-size: 25px;
+    .one,
+    .two,
+    .three {
+        width: 800px;
+        height: 400px;
     }
 
-    header nav {
-        width: 100%;
+    .projects,
+    .best {
+        flex-shrink: 3;
     }
+}
 
-    .about-me h2,
-    .flex-container h2,
-    .contact h2 {
+@media screen and (max-width: 768px) {
+    .one,
+    .two,
+    .three {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    .section-title {
         font-size: 30px;
     }
 
@@ -235,100 +238,24 @@ header nav ul li a:hover {
         font-size: 15px;
     }
 
-    .projects {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .names a {
+        font-size: 10px;
     }
-
-    .best {
-        margin-bottom: 10px;
-    }
-
+    
     .one,
-    .two {
-        margin: 10px 0;
+    .two,
+    .three {
+        width: 350px;
+        height: 200px;
     }
 
-    .best,
-    .one,
-    .two {
-        width: 400px;
-        height: 275px;
-    }
-
-    .contacts p,
-    .contacts a {
+    .git a,
+    .linked a {
         font-size: 20px;
     }
 
-    .contacts p {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    header nav ul {
-        margin-right: 5px;
-    }
-    
-    .about-me,
-    .flex-container,
-    .contact {
-        width: 90%;
-    }
-
-    .best,
-    .one,
-    .two {
-        height: 350px;
-        width: 500px;
-    }
-
-    .contacts a {
-        padding: 0 50px;
-    }
-}
-
-@media screen and (min-width: 980px) {
-
-    .about-me,
-    .flex-container,
-    .contact {
-        width: 91%;
-    }
-
-
-    .best {
-        width: 825px;
-        height: 500px;
-    }
-
-    .projects {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .one,
-    .two {
-        width: 402px;
-        height: 275px;
-    }
-
-    .one {
-        margin:4px 10px;
-    }
-    
-    .two {
-        margin:4px 10px;
-    }
-
-    .contacts {
-        padding: 0 100px;
-    }
-
-    .personal {
-        padding: 15px 0;
+    .phone p,
+    .email p {
+        font-size: 20px;
     }
 }
