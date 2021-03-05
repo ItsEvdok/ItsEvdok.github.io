@@ -231,6 +231,13 @@ header nav ul li a:hover {
     .three {
         height: 350px;
     }
+
+    .git a,
+    .linked a,
+    .email a,
+    .phone a {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -263,12 +270,23 @@ header nav ul li a:hover {
     }
 
     .git a,
-    .linked a {
-        font-size: 20px;
+    .linked a,
+    .email a,
+    .phone a {
+        font-size: 15px;
     }
 
-    .phone p,
-    .email p {
-        font-size: 10px;
+    .git,
+    .linked,
+    .phone,
+    .email {
+        padding: 10px;
     }
+
+    .about-me,
+    .my-work,
+    .contact {
+        margin: 50px 20px;
+    }
+}
 }
