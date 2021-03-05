@@ -241,6 +241,10 @@ header nav ul li a:hover {
     .names a {
         font-size: 10px;
     }
+
+    .my-work {
+        width: 100%;
+    }
     
     .one,
     .two,
