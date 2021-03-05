@@ -221,6 +221,11 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    header a {
+        font-size: 25px;
+    }
+
     .one,
     .two,
     .three {
@@ -229,6 +234,14 @@ header nav ul li a:hover {
 }
 
 @media screen and (max-width: 575px) {
+
+    header a {
+        font-size: 20px;
+    }
+
+    .ptext {
+        font-size: 18px;
+    }
 
     .section-title {
         font-size: 30px;
@@ -242,10 +255,6 @@ header nav ul li a:hover {
         font-size: 10px;
     }
 
-    .my-work {
-        width: 100%;
-    }
-    
     .one,
     .two,
     .three {
