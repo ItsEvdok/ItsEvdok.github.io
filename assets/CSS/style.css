@@ -157,12 +157,19 @@ header nav ul li a:hover {
 
 .two,
 .three {
-    background-image: url(../images/placeholder.png);
     width: 475px;
     height: 350px;
     background-size: cover;
     border: 5px solid rgba(0, 0, 0);
     margin: 25px;
+}
+
+.two {
+    background-image: url(../images/Quizerly.png);
+}
+
+.three{
+    background-image: url(../images/placeholder.png);
 }
 
 /* Contacts Section */
@@ -300,5 +307,4 @@ header nav ul li a:hover {
     .contact {
         margin: 50px 20px;
     }
-}
 }
